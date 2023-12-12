@@ -9,15 +9,26 @@ import {
   Route
 } from "react-router-dom";
 
-class App extends React.Component {
-  render() {
+import { useState } from 'react';
+let SEVER = import.meta.env.VITE_SERVER;
+
+
+function App(){
+  const [books, setBooks]= useState([]);
+
+  async function fetchBooks(){
+    try{
+      let response = await axios.get(`${SERVER}/books`)
+      setBooks(response.data);
+    }catch(e){console.error(e.message)}
+  }
     return (
       <>
         <Router>
           <Header />
           <Routes>
             <Route 
-              exact path="/"
+              exact path="/books"
               element={<BestBooks />}
             >
             </Route>
@@ -28,6 +39,6 @@ class App extends React.Component {
       </>
     )
   }
-}
+
 
 export default App;
