@@ -31,7 +31,7 @@ function App(){
           <button onClick={fetchBooks}>Get me some books!</button>
           <Routes>
             <Route 
-              exact path="/books"
+              exact path="/"
               element={<BestBooks books={books}/>}
             >
             </Route>
