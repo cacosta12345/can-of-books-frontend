@@ -4,6 +4,7 @@ import Footer from './Footer';
 import BestBooks from './BestBooks';
 import Profile from './About';
 import axios from 'axios';
+import Home from './Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -34,7 +35,7 @@ function App(){
           <Routes>
             <Route 
               exact path="/"
-              element={<BestBooks books={books}/>}
+              element={<Home/>}
             >
             </Route>
             <Route 
@@ -45,7 +46,7 @@ function App(){
             <Route
             exact path="/about"
             element={<Profile/>}></Route>
-            {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
+           
             
           </Routes>
           <Footer />
