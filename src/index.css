@@ -3,3 +3,14 @@
     margin: 5px;
 }
 
+
+.carousel-caption {
+    backdrop-filter: blur(16px) saturate(180%);
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    
+ 
+}
+
+
+
