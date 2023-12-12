@@ -1,11 +1,14 @@
-import { Component } from "react";
+import { Link } from "react-router-dom";
 
-class Profile extends Component {
+function Profile(){
 
-  render() {
-    /* TODO: render information about the developers */
-    return <p>Profile page coming soon</p>
-  }
+  
+    
+    return <ul>
+      <Link to= {`https://github.com/StepheeGee`}>Stephanie's Github</Link>
+      <Link to= {`https://github.com/cacosta12345`} >Chris' Github</Link>
+    </ul>
+  
 }
 
 export default Profile;
