@@ -1,45 +1,43 @@
 
 import { If, Then } from 'react-if';
 import Carousel from 'react-bootstrap/Carousel';
+import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import BookFormModal from './BookFormModal';
 let SERVER = import.meta.env.VITE_SERVER;
 
 
 
 function BestBooks() {
   const [books, setBooks] = useState([]);
-  // const [title, setTitle] = useState('');
-  // const [description, setDescription] = useState('');
+  const [modalShow, setModalShow] = useState(false)
 
 
-  // function handleChange(e){
-  //  let name = e.target.name
-  //  let value = e.target.value
-  //  if(name==='title'){setTitle(value)}
-  //  if(name==='description'){setDescription(value)}
-  // }
 
+  async function handleDelete(e) {
+    console.log('deleting', e.target.id)
+    try {
+      let response = await axios.delete(`${SERVER}/books/${e.target.id}`)
+      let book = response.data;
+      console.log(book);
 
-  //  function handleSubmit(e){
-  //   e.preventDefault();
-  //   let book = {title, description}
-  //   console.log('Sending a book', book)
-  //   let response = await axios.post(`${SERVER}/books, book);
-  //   console.log('Server Response', response.data) 
-  // }
-
+      let newBooks = books.filter((book) => {
+        return book.id !== e.target.id;
+      })
+      setBooks(newBooks);
+    } catch (e) { console.log(e.message) }
+  }
   async function fetchBooks() {
     try {
       let response = await axios.get(`${SERVER}/books`)
       setBooks(response.data);
-      console.log('getting books', response.data)
     } catch (e) { console.error(e.message) }
   }
 
   useEffect(() => {
-    console.log('Mounted up');
     fetchBooks();
+    console.log('mounting')
 
     return () => {
       console.log('Unmounted');
@@ -63,12 +61,17 @@ function BestBooks() {
                   <h3>{book.title}</h3>
                   <p>{book.description}</p>
                   <p>{book.status}</p>
+                  <span id={book._id} onClick={handleDelete} style={{color:"red", cursor:"pointer"}}>Delete</span>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
           </Carousel>
         </Then>
       </If>
+      <div className='modal-btn-container'>
+        <Button className='modal-button' onClick={() => setModalShow(true)}>Add a book!</Button>
+      </div>
+      <BookFormModal setBooks={setBooks} books={books} show={modalShow} onHide={() => setModalShow(false)}></BookFormModal>
     </>
   )
 }
