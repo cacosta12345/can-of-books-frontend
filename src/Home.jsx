@@ -1,7 +1,7 @@
 function Home(){
     return (
         <>
-        <p>Welcome to the book storee</p>
+        <h1>Welcome to the book store!</h1>
         </>
     )
 }
