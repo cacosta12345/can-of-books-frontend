@@ -20,7 +20,7 @@ function BestBooks(props) {
             <Carousel.Item key={book._id}>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400" // Replace with the actual image URL
+                src="../book.jpg" // Replace with the actual image URL
                 alt={book.title}
               />
               <Carousel.Caption>
