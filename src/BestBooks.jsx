@@ -4,8 +4,10 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 function BestBooks(props) {
-
+  console.log(props)
   console.log(props.books)
+
+  
 
 
   return (
