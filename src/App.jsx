@@ -26,13 +26,12 @@ function App(){
   }
     return (
       <>
-        <BestBooks books={books}></BestBooks>
         <Router>
           <Header />
           <button onClick={fetchBooks}>Get me some books!</button>
           <Routes>
             <Route 
-              exact path="/"
+              exact path="/books"
               element={<BestBooks books={books}/>}
             >
             </Route>
