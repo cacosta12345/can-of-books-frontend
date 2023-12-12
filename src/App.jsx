@@ -34,11 +34,13 @@ function App(){
           <Routes>
             <Route 
               exact path="/"
+
               element={<BestBooks books={books}/>}
             >
             </Route>
             <Route 
               exact path="/books"
+
               element={<BestBooks books={books}/>}
             >
             </Route>
