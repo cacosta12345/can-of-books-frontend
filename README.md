@@ -8,6 +8,7 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 
 **Stephanie G. Johnson**
 **Christopher Acosta**
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Links
 
@@ -17,8 +18,8 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 
 ## Lighthouse
 
-[12.11.23](./lighthouse.png)
-[12.12.23]()
+![12.11.23](./lighthouse.png)
+![12.12.23](./lighthouse2.png)
 [12.13.23]()
 [12.14.23]()
 
@@ -69,8 +70,6 @@ By combining Chris's expertise and Stephanie's learning agility, the team can cr
    - **Acknowledge Differences:** Recognize that each team member brings unique skills and experiences to the table. Embrace diversity in skills and knowledge.
    - **Learning Environment:** Create an environment where learning and skill development are encouraged. Pairing team members with varying skill levels for tasks can facilitate knowledge sharing.
    - **Support and Guidance:** Offer support and guidance to bridge skill gaps. Encourage the sharing of knowledge and resources among team members.
-**Author**: Team Member Names Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
@@ -79,6 +78,9 @@ By combining Chris's expertise and Stephanie's learning agility, the team can cr
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+12-11-2023 8:30pm - Application now has a fully-functional database. Frontend and Backend communicate.
+12-12-2023 7:30pm - Application now have working carousel and modal. App also allows for post and delete, which communicates from the frontend to the database.
+
 ## Estimates
 
 **Day 1**: 12.11.23
@@ -91,7 +93,7 @@ Actual time: 3 hours
 Feature: Add Post and Delete
 Estimate: 2 hours
 Start time: 4:30pm
-End time: 8:30pm
+End time: 7:30pm
 Actual time: 3 hours
 
 ## Credit and Collaborations
