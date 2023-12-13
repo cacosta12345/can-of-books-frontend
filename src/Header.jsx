@@ -6,8 +6,7 @@ function Header() {
   {
     return (
       <header>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand>My Favorite Books</Navbar.Brand>
+        <Navbar collapseOnSelect expand="lg">
           <NavItem><Link to="/" className="nav-link">Home</Link></NavItem>
           <NavItem><Link to="/books" className="nav-link">Books</Link></NavItem>
           <NavItem><Link to="/about" className="nav-link">About</Link></NavItem>
