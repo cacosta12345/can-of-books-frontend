@@ -13,8 +13,6 @@ function BestBooks() {
   const [books, setBooks] = useState([]);
   const [modalShow, setModalShow] = useState(false)
 
-
-
   async function handleDelete(e) {
     console.log('deleting', e.target.id)
     try {
@@ -46,32 +44,35 @@ function BestBooks() {
 
   return (
     <>
-      <h2>My Essential Lifelong Learning &amp; Formation Shelf</h2>
-      <If condition={books}>
-        <Then>
-          <Carousel fade>
-            {books.map((book) => (
-              <Carousel.Item key={book._id}>
-                <img
-                  className="d-block w-100"
-                  src="../book.jpg"
-                  alt={book.title}
-                />
-                <Carousel.Caption>
-                  <h3>{book.title}</h3>
-                  <p>{book.description}</p>
-                  <p>{book.status}</p>
-                  <span id={book._id} onClick={handleDelete} style={{color:"red", cursor:"pointer"}}>Delete</span>
-                </Carousel.Caption>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </Then>
-      </If>
-      <div className='modal-btn-container'>
-        <Button className='modal-button' onClick={() => setModalShow(true)}>Add a book!</Button>
+      <div className='best-books'>
+        <If condition={books}>
+          <Then>
+            <div className='carousel-container'>
+              <Carousel fade>
+                {books.map((book) => (
+                  <Carousel.Item key={book._id}>
+                    <img
+                      className="d-block w-100"
+                      src="../shelf.jpg"
+                      alt={book.title}
+                    />
+                    <Carousel.Caption>
+                      <h3>{book.title}</h3>
+                      <p>{book.description}</p>
+                      <p>{book.status}</p>
+                      <span id={book._id} onClick={handleDelete} style={{ color: "red", cursor: "pointer" }}>Delete</span>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            </div>
+          </Then>
+        </If>
+        <div className='modal-btn-container'>
+          <Button className='modal-button' onClick={() => setModalShow(true)}>Add a book!</Button>
+        </div>
+        <BookFormModal setBooks={setBooks} books={books} show={modalShow} onHide={() => setModalShow(false)}></BookFormModal>
       </div>
-      <BookFormModal setBooks={setBooks} books={books} show={modalShow} onHide={() => setModalShow(false)}></BookFormModal>
     </>
   )
 }
