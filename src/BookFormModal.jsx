@@ -9,9 +9,9 @@ let SERVER = import.meta.env.VITE_SERVER;
 
 
 function BookFormModal(props) {
-    const [title, setTitle] = useState('');
-    const[status, setStatus]= useState('');
-    const [description, setDescription] = useState('');
+    const [title, setTitle] = useState([]);
+    const[status, setStatus]= useState([]);
+    const [description, setDescription] = useState([]);
 
     function handleChange(e) {
         let name = e.target.name
@@ -55,7 +55,7 @@ function BookFormModal(props) {
                             <Form.Control onChange={handleChange} name='description' placeholder='Book Description' />
                             <Form.Select onChange={handleChange} name='status' aria-label="Default select example">
                                 <option>Status</option>
-                                <option value="1">Recommended</option>
+                                <option value='1'>Recommended</option>
                                 <option value="1">Favorites</option>
                                 <option value="1">Top 10</option>
                             </Form.Select>

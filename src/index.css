@@ -59,7 +59,7 @@ h1 {
 }
 
 body {
-    background-image: url(./bookshelf.jpg);
+    background-image: url(../bookshelf.jpg);
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
