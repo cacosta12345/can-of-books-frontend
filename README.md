@@ -6,8 +6,8 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 
 ## Authors
 
-Stephanie G. Johnson
-Christopher Acosta
+**Stephanie G. Johnson**
+**Christopher Acosta**
 
 ## Links
 
@@ -17,11 +17,13 @@ Christopher Acosta
 
 ## Lighthouse
 
-[12.11.23](./lab11%20lighthouse.PNG)
+[12.11.23](./lighthouse.png)
 [12.12.23]()
 [12.13.23]()
 [12.14.23]()
 
+## Overview
+<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 ## Collaboration
 
 ### Logistical
@@ -67,3 +69,29 @@ By combining Chris's expertise and Stephanie's learning agility, the team can cr
    - **Acknowledge Differences:** Recognize that each team member brings unique skills and experiences to the table. Embrace diversity in skills and knowledge.
    - **Learning Environment:** Create an environment where learning and skill development are encouraged. Pairing team members with varying skill levels for tasks can facilitate knowledge sharing.
    - **Support and Guidance:** Offer support and guidance to bridge skill gaps. Encourage the sharing of knowledge and resources among team members.
+**Author**: Team Member Names Goes Here
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+
+## Getting Started
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+## Change Log
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+## Estimates
+
+**Day 1**: 12.11.23
+Feature: Setting up the backend and frontend repo,storage, adding the carousel
+Estimate: 2 hours
+Start time: 6:30pm
+End time: 9:30pm
+Actual time: 3 hours
+**Day 2**: 12.12.23
+Feature: Add Post and Delete
+Estimate: 2 hours
+Start time: 4:30pm
+End time: 8:30pm
+Actual time: 3 hours
+
+## Credit and Collaborations
