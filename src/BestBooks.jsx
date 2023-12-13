@@ -13,7 +13,7 @@ let SERVER = import.meta.env.VITE_SERVER;
 function BestBooks() {
   const [books, setBooks] = useState([]);
   const [modalShow, setModalShow] = useState(false)
-  const [selectedBook, setSelectedBook]= useState(null)
+  const [selectedBook, setSelectedBook]= useState([])
 
 
   async function handleDelete(e) {
