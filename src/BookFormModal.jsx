@@ -55,9 +55,9 @@ function BookFormModal(props) {
                             <Form.Control onChange={handleChange} name='description' placeholder='Book Description' />
                             <Form.Select onChange={handleChange} name='status' aria-label="Default select example">
                                 <option>Status</option>
-                                <option value="Recommended">Recommended</option>
-                                <option value="Favorites">Favorites</option>
-                                <option value="Top 10">Top 10</option>
+                                <option value="1">Recommended</option>
+                                <option value="1">Favorites</option>
+                                <option value="1">Top 10</option>
                             </Form.Select>
                             <Button type='submit'>Save Book</Button>
                         </Form.Group>

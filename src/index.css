@@ -3,14 +3,22 @@
     margin: 5px;
 }
 
-.carousel {
-    margin: 30px;
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.carousel-container{
+    max-width: 700px;
+    
 }
 
 .carousel-caption {
-    backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(10px) saturate(180%);
     color:rgb(0, 0, 0);
     font-weight: bold;
+    
 }
 
 .carousel-control-next {
@@ -26,6 +34,20 @@
     justify-content: center;
     margin: 10px;
 }
+
+body {
+    background-image: url(./bookshelf.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin: 0; /* Remove default margin to ensure full coverage */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
