@@ -75,10 +75,10 @@ function BestBooks() {
             <div className='carousel-container'>
               <Carousel fade>
                 {books.map((book) => (
-                  <Carousel.Item key={book._id}>
+                  <Carousel.Item className='c-item' key={book._id}>
                     <img
                       className="d-block w-100"
-                      src="./shelf.jpg"
+                      src="./book.jpg"
                       alt={book.title}
                     />
                     <Carousel.Caption>
