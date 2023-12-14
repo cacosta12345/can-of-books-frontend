@@ -74,8 +74,7 @@ function BestBooks() {
           <Then>
             <div className='carousel-container'>
               <Carousel fade>
-                {console.log(books);
-                books.map((book) => (
+                {books.map((book) => (
                   <Carousel.Item key={book._id}>
                     <img
                       className="d-block w-100"
