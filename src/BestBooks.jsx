@@ -13,7 +13,7 @@ let SERVER = import.meta.env.VITE_SERVER;
 function BestBooks() {
   const [books, setBooks] = useState([]);
   const [modalShow, setModalShow] = useState(false)
-  const [selectedBook, setSelectedBook]= useState([])
+  const [selectedBook, setSelectedBook]= useState(null)
 
 
   async function handleDelete(e) {
@@ -65,6 +65,8 @@ function BestBooks() {
     }
   }, [])
 
+  
+
   return (
     <>
       <div className='best-books'>
@@ -72,7 +74,8 @@ function BestBooks() {
           <Then>
             <div className='carousel-container'>
               <Carousel fade>
-                {books.map((book) => (
+                {console.log(books);
+                books.map((book) => (
                   <Carousel.Item key={book._id}>
                     <img
                       className="d-block w-100"
