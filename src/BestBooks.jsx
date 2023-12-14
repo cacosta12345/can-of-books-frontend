@@ -78,7 +78,7 @@ function BestBooks() {
                   <Carousel.Item className='c-item' key={book._id}>
                     <img 
                       className="d-block w-100 image"
-                      src='./shelf'
+                      src='/shelf.jpg'
                       alt={book.title}
                     />
                     <Carousel.Caption>
