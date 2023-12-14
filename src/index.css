@@ -58,9 +58,9 @@ h1 {
     margin: 10px;
 }
 
-/* .carousel-item {
-    src: url(../shelf.jpg);
-} */
+.carousel-item img.image{
+    content: url(../shelf.jpg);
+}
 
 body {
     background-image: url(../bookshelf.jpg);
