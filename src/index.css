@@ -58,6 +58,10 @@ h1 {
     margin: 10px;
 }
 
+/* .carousel-item {
+    src: url(../shelf.jpg);
+} */
+
 body {
     background-image: url(../bookshelf.jpg);
     background-size: cover;
